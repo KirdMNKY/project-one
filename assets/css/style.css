@@ -4,24 +4,21 @@ header {
     background-size: 100%;
     height: auto;
     min-height: 100%;
+    color: #fff;
 }
-
-body {
+ body {
     background-image: url("../../assets/images/bodybg.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
     height: auto;
     min-height: 100%;
 }
-
-.card {
+ .card {
     padding: 0px!important;
 }
-
-.card-header {
+ .card-header {
     padding: 0px!important;
 }
-
-.btn-link {
+ .btn-link {
     text-decoration: none!important;
-}
+} 

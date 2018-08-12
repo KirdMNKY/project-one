@@ -1,102 +1,266 @@
 <!DOCTYPE html>
-<html lang=“en-us”> 
+<html lang="en">
+
 <head>
-<meta charset=“UTF-8”>
-<title>Project One</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- CSS reset -->
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+    <!-- jQuery Library -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+        integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
+    <script src="https://unpkg.com/bootstrap-material-design@4.1.1/dist/js/bootstrap-material-design.js" integrity="sha384-CauSuKpEqAFajSpkdjv3z9t8E7RlpJ1UP0lKM/+NdtSarroVKu069AlsRPKkFBz9"
+        crossorigin="anonymous"></script> -->
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+    <!-- stylesheet for icons and fonts-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|PT+Sans" rel="stylesheet">
+    <title>Career Path Finder</title>
+</head>
+<header>
 
-<link rel="stylesheet" href="assets/css/style.css">
-<link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/slate/bootstrap.min.css" rel="stylesheet" integrity="sha384-RpX8okQqCyUNG7PlOYNybyJXYTtGQH+7rIKiVvg1DLg6jahLEk47VvpUyS+E2/uJ" crossorigin="anonymous">
-
-<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
-</script>
-<style>
-    /* body {
-        background: url("assets/images/ep_naturalblack.png");
-    } */
-</style>
- </head>
-<body>
-
-    <header id="masterhead">
-        <div class="nav-bar">
-          <a href= "#" id="logo">Career Tracker</a>  
-            <nav>
-                <a href= "#">Text</a>
-                <a href= "#">Text</a>
-                <a href= "#">Text</a>
-                <a href= "#">Text</a>
-            </nav>
+    <body class="bg-dark">
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <img src="assets/images/logo1.png" width="30" height="30" class="align-middle mt-2" alt="">
+            </div>
         </div>
-     </header>
-
-     <div class="container">
-         <div class="row">
-             <div class="col-sm-12 col-md-9">
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                      <h3 class="panel-title">Display Info from APIs</h3>
+        <div class="row">
+            <div class="col-sm-12 text-center">
+                <h2 class="ml-2 mr-2 d-inline-block">Career Path Finder</h2>
+            </div>
+        </div>
+</header>
+<div class="accordion mt-3 ml-4 mr-4 rounded" id="accordionExample">
+    <!-- select a career field (values pre-determined) -->
+    <div class="card rounded ml-4 mr-4">
+        <div class="card-header bg-dark text-center" id="headingOne">
+            <button class="btn btn-link mb-0" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <h5 class="mb-0 text-capitalize text-light">Get Started Here</h5>
+                <i class="fas fa-chevron-circle-down mb-0 text-light"></i>
+            </button>
+        </div>
+        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+            <div class="card-body bg-light">
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <i class="fas fa-user-md"></i>
+                        <i class="fas fa-flask"></i>
+                        <i class="fas fa-laptop"></i>
                     </div>
-                    <div class="panel-body">
-                      <table class="table table-hover Light" id="-table">
-                        <thead>
-                          <tr>
-                            <th>Career Title</th>
-                            <th>Salary</th>
-                            <th class="text-center">Degree field</th>
-                            <th class="text-center">Job Openings</th>
-                            <th class="text-center">Location</th>
-                          </tr>
-                        </thead>
-                        <tbody id="career-table-rows">
-                        </tbody>
-                      </table>
-                    </div>
-                  </div>
-             </div>
-             <div class="col-xs-12 col-sm-3">
-                <div class="panel panel-default">
-                  <div class="panel-heading">
-                    <h3 class="panel-title">Career Path Finder</h3>
-                    <div>
-                      <div class="panel-body">
-                        <form>
-                          <div class="form-group">
-                            <label>Career Title</label>
-                            <input type="text" class="form-control form-field" id="cr-title">
-                          </div>
-                          <div class="form-group">
-                            <label>Job Description/Salary</label>
-                            <input type="text" class="form-control form-field" id="cr-salary">
-                          </div>
-                          <div class="form-group">
-                            <label>School/Degree</label>
-                            <input type="text" class="form-control form-field" id="first-train">
-                          </div>
-                          <div class="form-group">
-                            <label>Location</label>
-                            <input type="text" class="form-control form-field" id="cr-location">
-                          </div>
-                          <button type="submit" class="btn btn-default" id="submit">Search</button>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </div>
-         </div>
-         <hr>
-<footer>
-    <p class="text-center">&copy; 2018 Team #7 - All Rights Reserved.</p>
-</footer>
-     </div>
+                <div class="row pl-1 pr-1">
+                    <div class="col-sm-12 d-inline-block text-center">
+                        <h6 class="mb-0 text-capitalize text-primary">Enter any job title in the field below
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-4">
+                    </div>
+                    <div class="col-sm-4 text-center mt-2 mb-4">
+                        <textarea class="form-control" id="careerInput" rows="1"></textarea>
+                    </div>
+                    <div class="col-sm-4">
+                    </div>
+                </div>
 
 
-
-
-
-
+                <div class="row">
+                    <div class="col-sm-12 text-center mt-2 mb-4">
+                        <h6 class="mb-0 text-capitalize text-primary">Select a State
+                        </h6>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="form-group">
+                            <label for="state" class="control-label">
+                                <i class="fas fa-map-marked"></i>
+                            </label>
+                            <select class="form-control" id="state" name="state">
+                                <option id="">Browse States:</option>
+                                <option>AK</option>
+                                <option>AL</option>
+                                <option>AR</option>
+                                <option>AZ</option>
+                                <option>CA</option>
+                                <option>CO</option>
+                                <option>CT</option>
+                                <option>DC</option>
+                                <option>DE</option>
+                                <option>FL</option>
+                                <option>GA</option>
+                                <option>HI</option>
+                                <option>IA</option>
+                                <option>ID</option>
+                                <option>IL</option>
+                                <option>IN</option>
+                                <option>KS</option>
+                                <option>KY</option>
+                                <option>LA</option>
+                                <option>MA</option>
+                                <option>MD</option>
+                                <option>ME</option>
+                                <option>MI</option>
+                                <option>MN</option>
+                                <option>MO</option>
+                                <option>MS</option>
+                                <option>MT</option>
+                                <option>NC</option>
+                                <option>ND</option>
+                                <option>NE</option>
+                                <option>NH</option>
+                                <option>NM</option>
+                                <option>NV</option>
+                                <option>NY</option>
+                                <option>OH</option>
+                                <option>OK</option>
+                                <option>OR</option>
+                                <option>PA</option>
+                                <option>PR</option>
+                                <option>RI</option>
+                                <option>SC</option>
+                                <option>SD</option>
+                                <option>TN</option>
+                                <option>TX</option>
+                                <option>UT</option>
+                                <option>VA</option>
+                                <option>VT</option>
+                                <option>WA</option>
+                                <option>WI</option>
+                                <option>WV</option>
+                                <option>WY</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-12 text-center">
+                        <button id="submitBtn">Search</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row mt-3">
+        <div class="col-sm-12">
+            <div class="card ml-4 mr-4">
+                <div class="card-header bg-dark  text-center" id="headingTwo">
+                    <button class="btn btn-link mb-0" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                        <h5 class="mb-0 text-capitalize text-light">Job Title/Descriptions</h5>
+                        <i class="fas fa-chevron-circle-down mb-0 text-light"></i>
+                    </button>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                    <div class="card-body main" id="occupation-div">
+                        <div class="row pl-1 pr-1">
+                            <div class="col-sm-12 d-inline-block text-center">
+                                <h6 class="mb-0 text-capitalize text-primary">Click on any career title below to learn more!
+                                </h6>
+                            </div>
+                        </div>
+                            <!-- Insert Content Here -->
+                            <!-- <div class="card bg-light">
+                        <h6 class="card-header text-center bg-light" style="color:darkslategray">Title/Description</h6>
+                        <div class="card-body" style="padding:0px">
+                            <p class="card-text"></p>
+                            <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a>
+                        </div>
+                    </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="card ml-4 mr-4">
+                    <div class="card-header bg-dark  text-center" id="headingThree">
+                        <button class="btn btn-link mb-0" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="true"
+                            aria-controls="collapseThree">
+                            <h5 class="mb-0 text-capitalize text-light">Salary Info, Career Prospects, Education Requirements</h5>
+                            <i class="fas fa-chevron-circle-down mb-0 text-light"></i>
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                        <div class="card-body">
+                            <!-- Insert Content Here -->
+                            <div class="card bg-light">
+                                <h6 class="card-header text-center bg-light" style="color:darkslategray">Salary Info</h6>
+                                <div class="card-body" style="padding:0px">
+                                    <p class="card-text" id="salary"></p>
+                                    <!-- <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a> -->
+                                </div>
+                            </div>
+                            <!-- <div class="card bg-light mt-2">
+                        <h6 class="card-header text-center bg-light" style="color:darkslategray">Career Prospects</h6>
+                        <div class="card-body" style="padding:0px">
+                            <p class="card-text" id=prospects></p>
+                            <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a>
+                        </div>
+                    </div> -->
+                            <div class="card bg-light mt-2">
+                                <h6 class="card-header text-center bg-light" style="color:darkslategray">Education Requirements</h6>
+                                <div class="card-body" style="padding:0px">
+                                    <p class="card-text" id="edReqs"></p>
+                                    <!-- <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-sm-12">
+                <div class="card ml-4 mr-4">
+                    <div class="card-header bg-dark  text-center" id="headingFour">
+                        <button class="btn btn-link mb-0" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <h5 class="mb-0 text-capitalize text-light">What Universities Should I Choose?</h5>
+                            <i class="fas fa-chevron-circle-down mb-0 text-light"></i>
+                        </button>
+                    </div>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+                    <div class="card-body colleges-div">
+                        <!-- Insert Content Here -->
+                        <!-- <div class="card bg-light mt-2">
+                    <h6 class="card-header text-center bg-light" style="color:darkslategray">Colleges and Universities</h6>
+                    <div class="card-body" style="padding:0px">
+                        <p class="card-text" id=colleges></p>
+                        <!-- <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a> -->
+                        <!-- </div>
+                </div>  -->
+                        <!-- <div class="card bg-light mt-2">
+                    <h6 class="card-header text-center bg-light" style="color:darkslategray">Vocational Programs</h6>
+                    <div class="card-body" style="padding:0px">
+                        <p class="card-text" id="vocPrograms"></p>
+                        <a href="#" class="btn text-capitalize pt-0 pb-0 pr-2 pl-2" style="color:darkslategray!important">Test</a>
+                    </div>
+                </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- javascript  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="assets/javascript/app.js"></script>
+    </body>
 
-</body>
 </html>
